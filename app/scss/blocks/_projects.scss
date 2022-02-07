@@ -1,0 +1,57 @@
+.projects {
+ padding: 120px 0;
+ &__title {
+  @extend %title;
+ }
+ &__grid-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  row-gap: 40px;
+ }
+ &__item {
+  width: 260px;
+  height: 400px;
+  border: 1px solid #ececec;
+  position: relative;
+   &:hover {
+    
+   }
+ } 
+ &__button {
+
+ }
+ &__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &--space {
+   background-image: url("../images/projects/space.jpg");
+  }
+  &--simplefood {
+   background-image: url("../images/projects/simplefood.jpg");
+  }
+  &--helyfly {
+   background-image: url("../images/projects/helyfly.jpg");
+  }
+  &--freshOk {
+   background-image: url("../images/projects/freshOk.jpg");
+  }
+  &--marketing {
+   background-image: url("../images/projects/marketing.jpg");
+  }
+  &--marcho {
+   background-image: url("../images/projects/marcho.jpg");
+  }
+  &--smoothie {
+   background-image: url("../images/projects/smoothie.jpg");
+  }
+  &--thriveTalk {
+   background-image: url("../images/projects/thriveTalk.jpg");
+  }
+ }
+
+}

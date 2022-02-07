@@ -1,0 +1,12 @@
+.about {
+ padding: 60px 0;
+ text-align: center;
+ &__title {
+  @extend %title;
+  animation: text 3s 1;
+ }
+ &__text {
+  @include text(20px, 1.2, $textColor);
+ }
+
+}

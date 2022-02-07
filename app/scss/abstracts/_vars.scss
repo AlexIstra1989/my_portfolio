@@ -1,0 +1,35 @@
+$primaryColor: #FFF;
+$secondaryColor: #FE3E57;
+$titleColor: #29282D;
+$textColor:#8D8D8D;
+$bg: #F6F6F6;
+$breadcrumbsColor:#727272;
+
+%quicksand-400 {
+ font-family: "Quicksand-Regular", sans-serif;
+ font-weight: 400;
+}
+
+%quicksand-500 {
+ font-family: "Quicksand-Medium", sans-serif;
+ font-weight: 500;
+}
+
+%roboto-400 {
+ font-family: "Roboto-Regular", sans-serif;
+ font-weight: 400;
+}
+
+%roboto-700 {
+ font-family: "Roboto-Bold", sans-serif;
+ font-weight: 700;
+}
+
+%title {
+ font-size: 38px;
+ line-height: 1.5;
+ color: #29282D;
+ text-transform: uppercase;
+ text-align: center;
+ margin-bottom: 50px;
+}

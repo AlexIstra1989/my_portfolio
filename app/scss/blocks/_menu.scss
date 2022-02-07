@@ -1,0 +1,23 @@
+.menu {
+ &__burger {
+  // display: none;
+ }
+ &__list {
+  display: flex;
+  justify-content: flex-end;
+ }
+ &__item {
+  &:not(:last-child) {
+   margin-right: 20px;
+  }
+ }
+ &__link {
+  @include text (18px, 1.2, $primaryColor);
+  text-transform: uppercase;
+  transition: all 0.3s;
+   &:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ececec;
+   }
+ }
+} 

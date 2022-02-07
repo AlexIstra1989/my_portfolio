@@ -1,0 +1,50 @@
+.contacts {
+ @include background (url("../images/contacts-bg.jpg"));
+ padding: 100px 0;
+ color: $primaryColor;
+ &__title {
+  @extend %title;
+  color: $primaryColor;
+ }
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ &__item {
+  text-align: center;
+ }
+ &__item-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ececec;
+  margin: 0 auto 30px;
+  position: relative;
+  &::before {
+   @include pseudo;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 48px;
+   height: 64px;
+  }
+  &--address::before {
+   @include background(url("../images/icons/map.svg"));
+  }
+  &--email::before {
+   @include background(url("../images/icons/email.svg"));
+   width: 68px;
+   height: 68px; 
+  }
+  &--phone::before {
+   @include background(url("../images/icons/phone.svg"));
+  }
+  &--skype::before {
+   @include background(url("../images/icons/skype.svg"));
+   width: 56px;
+  }
+ 
+  
+ }
+}

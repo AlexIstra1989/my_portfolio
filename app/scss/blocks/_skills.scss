@@ -1,0 +1,39 @@
+.skills {
+ @include background(url("../../images/skills-bg.jpg"));
+ color: $primaryColor;
+ padding-top: 60px;
+ &__title {
+  @extend %title;
+  color: $primaryColor;
+ }
+ &__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+ }
+ &__item {
+  margin: 0 auto;
+  width: 260px;
+ }
+ &__item-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+ }
+ &__list-item {
+  position: relative;
+  &:not(:last-child) {
+   margin-bottom: 8px;
+  }
+  &::before {
+   @include pseudo;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: $primaryColor;
+   left: -20px;
+   top: 4px;
+  }
+ }
+}
